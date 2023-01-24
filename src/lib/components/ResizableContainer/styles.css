@@ -1,0 +1,51 @@
+.resizable-container {
+  position: relative;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: rgba(143, 85, 218, 0.165);
+  overflow: hidden;
+}
+
+.handle {
+  position: absolute;
+  /* background-color: blue; */
+  min-height: 16px;
+  min-width: 16px;
+}
+
+.handle:hover {
+  /* background-color: rgba(0, 0, 255, 0.571); */
+  z-index: 1;
+}
+
+.handle--top,
+.handle--bottom {
+  width: 100%;
+  cursor: row-resize;
+}
+
+.handle--left,
+.handle--right {
+  height: 100%;
+  cursor: col-resize;
+}
+
+.handle--top {
+  top: 0;
+  left: 0;
+}
+
+.handle--bottom {
+  bottom: 0;
+  left: 0;
+}
+
+.handle--left {
+  top: 0;
+  left: 0;
+}
+
+.handle--right {
+  right: 0;
+  top: 0;
+}
